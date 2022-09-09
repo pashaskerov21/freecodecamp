@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+main{
+    height: 100%;
+    margin: 2rem 1rem;
+    background-color: #EEEEEE;
+    border-radius: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.header{
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    padding: 6rem 0;
+}
+.header h1{
+    font-size: 3.5rem;
+}
+.header p{
+    font-size: 1.4rem;
+    margin-top: 2rem;
+}
+figure{
+    background-color: #fff;
+    margin: 2rem;
+}
+figure img{
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+figcaption{
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 3rem 0;
+}
+section{
+    width: 40%;
+    margin: 3rem auto;
+}
+section h2{
+    font-size: 2rem;
+    text-align: center;
+    padding: 5rem 0;
+}
+section ul{
+    font-size: 1.4rem;
+}
+section ul li{
+    padding: 1rem 0;
+}
+blockquote{
+    font-size: 1.4rem;
+    font-style: italic;
+    margin: 2rem 0;
+    text-align: left;
+}
+main h3{
+    text-align: center;
+    padding: 3rem 0;
+    font-size: 1.8rem;
+}
+main h3 a{
+    color: darkcyan;
+}

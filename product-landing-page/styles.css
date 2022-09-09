@@ -1,0 +1,218 @@
+:root{
+    --background-color1: #EEEEEE;
+    --background-color2: #DDDDDD;
+    --icon-color: #FF8C00;
+    --button-color: #F1C40F;
+    --text-color: #000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    background-color: var(--background-color1);
+    font-family: sans-serif;
+}
+li{
+    list-style: none;
+}
+  
+a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    flex-direction: column;
+    background-color: var(--background-color1);
+}
+main{
+    margin-top: 30rem;
+}
+.logo{
+    margin: 0 2rem;
+}
+.logo img{
+    width: 35rem
+}
+nav{
+    margin: 3rem 0;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    margin: 0 4rem;
+    font-size: 2rem;
+    flex-direction: column;
+}
+nav ul li{
+    margin: 1rem 0
+}
+
+.form-part{
+    width: 50%;
+    margin: 2rem auto;
+}
+.form-part h1{
+    font-size: 2.5rem;
+    text-align: center;
+}
+.form-part form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#email{
+    width: 70%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    margin: 2rem 0 1rem;
+}
+#submit{
+    width: 40%;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+#Features{
+    width: 65%;
+    margin: 2rem auto;
+}
+.features{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    padding: 5rem 0;
+}
+.features .icon{
+    color: var(--icon-color);
+}
+.features .content h2{
+    font-size: 2.5rem;
+}
+.features .content p{
+    font-size: 1.5rem;
+}
+#How_It_Works{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0;
+}
+
+#Pricing{
+    width: 70%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-evenly; 
+    flex-direction: column;
+}
+.card{
+    border: 2px solid black;
+    width: 60%;
+    margin: 1rem auto;
+    text-align: center;
+    font-size: 2rem;
+}
+.card-header{
+    background-color: var(--background-color2);
+    padding: 2rem;
+    font-weight: bold;
+}
+.card-content{
+    padding: 2rem;
+    
+}
+.card-content ul li{
+    padding: 1rem 0;
+    font-size: 1.6rem;
+}
+.card-btn{
+    padding: 1rem 2rem;
+    background-color: var(--button-color);
+    border: none;
+    margin: 2rem 0 1rem;
+}
+
+footer{
+    width: 70%;
+    background-color: var(--background-color2);
+    margin: 1rem auto 0;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+}
+footer ul{
+    display: flex;
+    font-size: 1.8rem;
+}
+footer ul li{
+    padding: 0 1rem;
+}
+footer span{
+    font-size: 1.6rem;
+    color: rgba(0,0,0,0.7);
+    margin: 0.5rem 0;
+}
+
+
+@media (min-width:960px){
+    html{
+        font-size: 9px;
+    }
+    header{
+        flex-direction: row;
+    }
+    main{
+        margin-top: 15rem;
+    }
+    nav ul{
+        flex-direction: row;
+    }
+    nav ul li{
+        margin: 0 4rem;
+    }
+    #email{
+        width: 40%;
+    }
+    #submit{
+        width: 20%;
+    }
+    #Pricing{
+        flex-direction: row;
+    }
+    .card{
+        width: 30%;
+    }
+}
+@media (min-width:760px){
+    nav ul{
+        flex-direction: row;
+    }
+    nav ul li{
+        margin: 0 3rem;
+    }
+    main{
+        margin-top: 20rem;
+    }
+}
+
